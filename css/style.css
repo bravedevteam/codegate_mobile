@@ -36,6 +36,7 @@
 
 .boxStoryItem li { border-radius:10px; background:#fff; border:1px solid #eff1f2; box-shadow: 2px 3px 15px 0 rgba(0, 0, 0, 0.06); overflow:hidden; }
 .boxStoryItem li+li { margin-top:20px; }
+.boxStoryItem .thumb img { width:100%; }
 .boxStoryItem .cont { padding:26px 20px; }
 .boxStoryItem .cont .title { margin-bottom:10px; font-size:20px; font-weight:700; }
 .boxStoryItem .cont .subject { margin-bottom:10px; font-size:14px; line-height:24px; }
