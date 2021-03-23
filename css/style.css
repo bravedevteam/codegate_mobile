@@ -1,6 +1,26 @@
 @charset "utf-8";
 @import url("./common.css");
 
+.boxLogin { padding:30px 20px 70px; text-align:center; }
+.boxLogin .title { margin-bottom:30px; font-size:18px; }
+.boxLogin .input { margin-bottom:30px; }
+.boxLogin .input input { width:100%; padding:15px; border:1px solid #707070; border-radius:5px; font-size:14px; }
+.boxLogin .input input+input { margin-top:13px; }
+.boxLogin .input input::placeholder { color:rgba(34,34,34,.4); }
+.boxLogin .btn { margin-bottom:30px; }
+.boxLogin .btn button { width:122px; height:50px; border:1px solid #5945f0; border-radius:50px; font-weight:700; font-size:16px; color:#5945f0; }
+.boxLogin .link a { padding:0 6px; position:relative; display:inline-block; color:#afafaf; font-size:14px; }
+.boxLogin .link a+a:after { content:''; width:1px; height:14px; position:absolute; left:0; top:50%; margin-top:-7px; background:#afafaf; }
+
+.boxNoLogin { padding:28px 0 70px; }
+.boxNoLogin .item { margin-bottom:33px; }
+.boxNoLogin .item .swiper-container { padding:0 8px; }
+.boxNoLogin .item .swiper-slide { width:100px; padding:0 8px; }
+.boxNoLogin .item .swiper-slide .box { width:84px; height:84px; border-radius:30px; background:url('../images/content/bgLoginItem.png') center center no-repeat #eff1f2; background-size:30px auto; overflow:hidden; }
+.boxNoLogin .boxEnter { text-align:center; }
+.boxNoLogin .boxEnter > div { margin-bottom:20px; font-size:18px; line-height:26px; }
+.boxNoLogin .boxEnter > a { width:122px; height:50px; margin:0 auto; display:block; border-radius:50px; border:1px solid #5945f0; color:#5945f0; font-size:16px; font-weight:700; line-height:48px; }
+
 .boxDetailTop { padding:48px 0 60px; text-align:center; color:#fff; word-break:keep-all;
 	background: rgb(112,94,252);
 	background: linear-gradient(180deg, rgba(112,94,252,1) 0%, rgba(88,68,240,1) 100%);
@@ -14,13 +34,24 @@
 .boxDetailTop .cont ul li .right { margin-left:68px; font-weight:700; }
 .boxDetailTop .btn a+a { margin-top:20px; }
 
-.boxDetailTop.type--write { padding:130px 0 50px; text-align:left; }
+.boxDetailTop.type--write { padding:130px 0 28px; text-align:left; background:#fff; }
 .boxDetailTop.type--write .cont { padding:0 20px; margin:0; }
-.boxDetailTop.type--write .cont .txt { margin-bottom:50px; font-size:20px; line-height:28px; }
-.boxDetailTop.type--write .cont .boxFile { width:100%; height:200px; display:flex; border:1px solid #00d5cd; background:#2c1aa8; border-radius:20px; align-items:center; justify-content:center; overflow:hidden; }
-.boxDetailTop.type--write .cont .boxFile a { width:100%; height:100%; display:flex; flex:1; align-items:center; justify-content:center; }
-.boxDetailTop.type--write .cont .boxFile a > div { padding-top:35px; background:url('../images/content/bgFile.png') center top no-repeat; background-size:114px auto; color:#00d5cd; font-size:14px; }
-.boxDetailTop.type--write .cont .boxFile a > div:before { content:''; width:12px; height:12px; margin-right:7px; display:inline-block; background:url('../images/common/iconPlusMint.png') no-repeat; background-size:12px auto; vertical-align:middle; }
+.boxDetailTop.type--write .cont .txt { margin-bottom:20px; font-size:20px; line-height:28px; color:#3c3c3c; }
+.boxDetailTop.type--write .cont .boxFile { width:100%; height:68vw; padding-bottom:64px; display:flex; position:relative; background:#f5f5f5; border-radius:15px; align-items:center; justify-content:center; overflow:hidden; }
+.boxDetailTop.type--write .cont .boxFile:after { content:''; width:100%; height:100%; position:absolute; left:0; top:0; border-radius:15px; z-index:1;
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%236552F6FF' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.boxDetailTop.type--write .cont .boxFile .fileSub { padding-top:22px; background:url('../images/common/iconPlusPurple.png') center top no-repeat; background-size:18px auto; color:#6552f6; font-size:14px; }
+.boxDetailTop.type--write .cont .boxFile .fileBox { position:relative; background:#f5f5f5; z-index:2; }
+.boxDetailTop.type--write .cont .boxFile .btn { width:100%; position:absolute; left:0; bottom:0; display:flex; background:#fff; overflow:hidden; border:1px solid #6552f6; border-bottom-left-radius:15px; border-bottom-right-radius:15px; z-index:3; }
+.boxDetailTop.type--write .cont .boxFile .btn a { height:62px; flex:1; display:flex; align-items:center; justify-content:center; font-size:14px; color:#3c3c3c; }
+.boxDetailTop.type--write .cont .boxFile .btn a+a { margin:0; border-left:1px solid #6552f6; }
+.boxDetailTop.type--write .cont .boxFile .btn a i { height:18px; display:inline-block; margin-right:10px; background-size:auto 100%; }
+.boxDetailTop.type--write .cont .boxFile .btn a i.bg1 { width:18px; background-image:url('../images/content/bgFile1.png'); }
+.boxDetailTop.type--write .cont .boxFile .btn a i.bg2 { width:22px; background-image:url('../images/content/bgFile2.png'); }
+.boxDetailTop.type--write .cont .boxFile .btn a i.bg3 { width:9px; background-image:url('../images/content/bgFile3.png'); }
+.boxDetailTop.type--write .cont .boxFile .btn a i.bg4 { width:14px; background-image:url('../images/content/bgFile4.png'); }
+.boxDetailTop.type--write .cont .boxFile .btn a i.bg5 { width:16px; background-image:url('../images/content/bgFile5.png'); }
 
 .btnCertify { height:22px; display:inline-block; line-height:22px; color:rgba(255,255,255,.6); font-size:16px; }
 .btnCertify:after { content:''; width:22px; height:22px; display:inline-block; margin-left:7px; background:url('../images/common/btnRoundArrow.png') no-repeat; background-size:100% auto; vertical-align:middle; }
@@ -48,10 +79,10 @@
 .boxStoryItem .cont .bottom .btn a.delete { background-image:url('../images/common/iconDelete.png'); }
 .boxStoryItem .cont .bottom .btn a+a { margin-left:10px; }
 
-.boxDetailWrite { padding-bottom:50px; }
+.boxDetailWrite { padding-bottom:50px; border-top:1px solid #eff1f2; }
 .boxDetailWrite .title { border-bottom:1px solid #eff1f2; }
-.boxDetailWrite .title input { width:100%; height:62px; padding:0 20px; border:0; color:#222; font-size:14px; }
-.boxDetailWrite .title input::placeholder { color:rgba(34,34,34,.4); }
+.boxDetailWrite .title input { width:100%; height:62px; padding:0 20px; border:0; color:#222; font-size:17px; font-weight:700; }
+.boxDetailWrite .title input::placeholder { font-size:14px; color:rgba(34,34,34,.4); font-weight:400; }
 .boxDetailWrite .cont { border-bottom:1px solid #eff1f2; }
 .boxDetailWrite .cont textarea { width:100%; height:190px; padding:22px 20px; border:0; resize:none; font-size:14px; font-family:inherit; }
 .boxDetailWrite .cont textarea::placeholder { color:rgba(34,34,34,.4); }

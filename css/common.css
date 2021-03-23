@@ -60,7 +60,7 @@
 /* common */
 * {margin:0; padding:0; box-sizing: border-box; list-style:none; text-decoration:none;
 	outline: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; }
-html, body { width: 100%; position: relative; font-size:12px; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; letter-spacing: -0.05em; line-height:1.4; font-weight:400; color:#222; }
+html, body { width: 100%; height:100%; position: relative; font-size:12px; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; letter-spacing: -0.05em; line-height:1.4; font-weight:400; color:#222; }
 ul>li>a { text-decoration:none; }
 a {color: inherit;}
 table { border-collapse: collapse; }
@@ -158,10 +158,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 #header { width:100%; height:60px; position:absolute; left:0; top:0; z-index:20; overflow:hidden; }
 #header h1 { width:50px; height:32px; float:left; background:url('../images/common/iconLogo.png') center center no-repeat; background-size:50px auto; font-size:0; text-indent:-99999px; }
-#header .title { margin-top:26px; color:#fff; font-size:20px; font-weight:400; text-align:center; }
+#header .title { margin-top:26px; font-size:20px; font-weight:400; text-align:center; }
 #header .btnMenu { width:26px; height:24px; float:right; margin-top:4px; background:url('../images/common/btnMenu.png') center center no-repeat; background-size:26px auto; font-size:0; text-indent:-99999px; }
 #header .btnPrev { width:38px; height:37px; position:absolute; left:10px; top:20px; background:url('../images/common/btnPrev.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
 #header .btnClose { width:38px; height:38px; position:absolute; left:10px; top:20px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
+#header .btnClose.type--black { background-image:url('../images/common/btnCloseBlack.png'); }
 
 #container.with--fixButton { padding-bottom:60px; }
 
@@ -178,5 +179,5 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #footer .link a:nth-child(4):after { display:none; }
 #footer .address { font-size:10px; color:#8e8e8e; font-family:"SFProDisplay", 'Sans-serif'; }
 
-
+#wrap { min-height:100%; }
 #wrap.main #header { height:auto; padding:20px; position:relative; }
