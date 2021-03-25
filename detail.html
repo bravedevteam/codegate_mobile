@@ -15,6 +15,7 @@
 	<section id="wrap">
 		<header id="header">
 			<button class="btnPrev">이전</button>
+			<a href="#" id="btnGnb" class="btnMenu white">메뉴</a>
 		</header>
 		<div id="container" class="with--fixButton">
 			<div class="boxDetailTop">
@@ -38,7 +39,7 @@
 				</div>
 				<div class="btn">
 					<a href="#" class="btnCertify">정품인증서 보기</a>
-					<a href="#" class="btnGift">선물하기</a>
+					<a href="#" class="btnGift openPopup" data-pop="popupGift">선물하기</a>
 				</div>
 			</div>
 			<div class="boxDetailStory">
@@ -84,5 +85,39 @@
 			<a href="#" class="add">컨텐츠 등록하기</a>
 		</div>
 	</section>
+
+	<div id="gnb">
+		<div class="title">로그인해 주세요.</div>
+		<ul>
+			<li><a href="#">SCAN</a></li>
+			<li><a href="#">나의 상품</a></li>
+			<li><a href="#">콘텐츠 리스트</a></li>
+			<li><a href="#">My page</a></li>
+		</ul>
+		<div class="btn">
+			<a href="#">로그인</a>
+		</div>
+		<button type="button" class="btnClose">닫기</button>
+	</div>
+
+	<div id="popupGift" class="popBasic">
+		<button type="button" class="btnClose">닫기</button>
+		<div class="cont">
+			<div class="textBasic">선물받는 분의<br />회원 이메일을 입력해 주세요.</div>
+			<div class="inputBasic"><input type="text" /></div>
+			<div class="boxGuide">
+				<ul class="listDot">
+					<li>선물하기는 회원에게만 가능합니다.</li>
+					<li>선물 받는 분의 회원 이메일을 정확하게 입력하셔야 합니다.</li>
+					<li>선물을 하시면 상품과 등록하신 콘텐츠의 소유권이 이전됩니다.</li>
+					<li>소유권 이전된 콘텐츠는 편집권한이 없어지므로 이전하시기 전에 정리하신 후 선물하셔야 합니다.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn">
+			<a href="#">선물하기</a>
+		</div>
+	</div>
+	<div id="dim"></div>
 </body>
 </html>

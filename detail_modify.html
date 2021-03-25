@@ -22,12 +22,27 @@
 				<div class="cont">
           <div class="txt">등록된 스토리를<br />수정할 수 있습니다.</div>
           <div class="boxFile">
-            <div class="fileBox">
-              <img src="./images/content/imgMainItem1.png" alt="" />
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="fileBox"><img src="./images/content/imgMainItem1.png" alt="" /></div>
+                  <div class="btn">
+                    <a href="#"><i class="bg4"></i>수정</a>
+                    <a href="#"><i class="bg5"></i>삭제</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="fileSub">파일을 첨부하세요</div>
+                  <div class="btn">
+                    <a href="#"><i class="bg4"></i>수정</a>
+                    <a href="#"><i class="bg5"></i>삭제</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="btn">
-              <a href="#"><i class="bg4"></i>수정</a>
-              <a href="#"><i class="bg5"></i>삭제</a>
+            <div class="boxFile_page">
+              <span class="current">1</span>
+              <span class="total"> / 3</span>
             </div>
           </div>
         </div>
@@ -43,12 +58,11 @@
           </textarea>
         </div>
         <div class="setup">
-          <div class="selectLock">
-            <label>공개</label>
-            <select>
-              <option selected="selected">공개</option>
-              <option>비공개</option>
-            </select>
+          <div class="setup">
+            <input type="radio" value="yes" name="chk_set" id="chk_set_yes" />
+            <label for="chk_set_yes">공개</label>
+            <input type="radio" value="no" name="chk_set" id="chk_set_no" checked="checked" />
+            <label for="chk_set_no">비공개</label>
           </div>
         </div>
       </div>
@@ -57,5 +71,19 @@
 			<a href="#">수정하기</a>
 		</div>
 	</section>
+  <script type="text/javascript">
+    $(function(){
+      var fileThumb = new Swiper('.boxFile .swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 6,
+        centeredSlides: true
+      });
+
+      fileThumb.on("slideChange", function(){
+        var idx = fileThumb.realIndex+1;
+        $(".boxFile_page .current").html(idx);
+      });
+    })
+  </script>
 </body>
 </html>
