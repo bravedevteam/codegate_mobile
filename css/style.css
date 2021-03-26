@@ -109,6 +109,29 @@
 .boxAgree .check+.check { margin-top:16px; }
 .boxAgree .check .detail { position:absolute; right:0; top:0; font-size:12px; color:#afafaf; }
 
+.listMyitem { padding:100px 20px 50px;
+	background: rgb(112,94,252);
+	background: linear-gradient(180deg, rgba(112,94,252,1) 0%, rgba(88,68,240,1) 100%);
+}
+.listMyitem ul li { position:relative; background:#fff; border-radius:10px; overflow:hidden; box-shadow: 2px 3px 15px 0 rgba(0, 0, 0, 0.06); }
+.listMyitem ul li+li { margin-top:20px; }
+.listMyitem ul li a { display:block; }
+.listMyitem ul li .thumb { width:30%; height:100%; position:absolute; left:0; top:0; display:flex; align-items:center; justify-content:center; box-shadow: 2px 0 17px 0 rgba(0, 0, 0, 0.09); }
+.listMyitem ul li .cont { margin-left:36%; padding:32px 10px 32px 0; }
+.listMyitem ul li .cont dl { overflow:hidden; font-size:14px; color:#3c3c3c; letter-spacing:-.08em; }
+.listMyitem ul li .cont dl dt { float:left; }
+.listMyitem ul li .cont dl dd { margin-left:65px; font-weight:700; }
+
+.boxSetup { padding:27px 0; position:relative; }
+.boxSetup .topBox { height:40px; margin:0 20px; padding:0 20px; background:#effcfb; border-radius:50px; font-size:14px; line-height:40px; }
+.boxSetup .topBox:before { content:''; width:22px; height:22px; margin-right:7px; display:inline-block; background:url('../images/common/iconSetCategory.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxSetup .listBox li { padding:25px 20px 30px; }
+.boxSetup .listBox li+li { border-top:1px solid #eff1f2; }
+.boxSetup .listBox li .title { margin-bottom:10px; font-size:20px; line-height:28px; }
+.boxSetup .listBox li .cont { overflow:hidden; }
+.boxSetup .listBox li .cont a { height:36px; padding:0 18px; margin:5px 10px 5px 0; float:left; border:1px solid #707070; border-radius:36px; line-height:34px; font-size:14px; opacity:.4; }
+.boxSetup .listBox li .cont a.active { border-color:#00d5cd; box-shadow: 0 3px 6px 0 rgba(0, 213, 205, 0.11); opacity:1; }
+
 .selectLock { position:relative; display:inline-block; }
 .selectLock label { height:32px; padding:0 22px 0 16px; position:relative; background:url('../images/common/iconLock.png') left center no-repeat; background-size:11px auto; z-index:1; line-height:32px; }
 .selectLock label:after { content:''; width:13px; height:8px; position:absolute; right:0; top:50%; background:url('../images/common/iconSelect.png') center center no-repeat; background-size:13px auto; transform:translateY(-50%); }
