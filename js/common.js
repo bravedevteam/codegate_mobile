@@ -60,6 +60,7 @@ $(function(){
 
 	$("#dim").click(function(){
 		$(".popBasic").removeClass("is--active");
+		$(".popAlert").removeClass("is--active");
 		closeDim();
 	});
 
