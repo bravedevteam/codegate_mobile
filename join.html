@@ -23,15 +23,13 @@
         <div class="row">
           <h3 class="title">이메일 주소</h3>
           <div class="row--division">
-            <div class="inputBasic">
+            <div class="inputBasic type--email">
               <input type="text" placeholder="이메일" class="fnSF" />
+              <a href="#">인증메일발송</a>
             </div>
-            <span>@</span>
-            <div class="selectBasic">
-              <select>
-                <option>선택해주세요.</option>
-              </select>
-            </div>
+          </div>
+          <div class="btn ta-c mt20">
+            <button type="button" class="btnBasic">이메일 인증하기</button>
           </div>
         </div>
         <div class="row">
@@ -88,9 +86,30 @@
 		<div class="title">로그인해 주세요.</div>
 		<ul>
 			<li><a href="#">SCAN</a></li>
-			<li><a href="#">나의 상품</a></li>
-			<li><a href="#">콘텐츠 리스트</a></li>
-			<li><a href="#">My page</a></li>
+      <li>
+        <a href="#">My page</a>
+        <ul class="depth2">
+          <li><a href="#">나의상품</a></li>
+          <li><a href="#">콘텐츠 리스트</a></li>
+          <li><a href="#">나의 정보</a></li>
+        </ul>
+      </li>
+			<li>
+        <a href="#">코드게이트 소개</a>
+        <ul class="depth2">
+          <li><a href="#">코드게이트란?</a></li>
+          <li><a href="#">코드게이트 사용법</a></li>
+          <li><a href="#">회사소개</a></li>
+        </ul>
+      </li>
+			<li>
+        <a href="#">고객지원</a>
+        <ul class="depth2">
+          <li><a href="#">자주하는 질문</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">소프트웨어 라이선스</a></li>
+        </ul>
+      </li>
 		</ul>
 		<div class="btn">
 			<a href="#">로그인</a>
