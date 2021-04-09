@@ -17,6 +17,15 @@ $(function(){
 		$("#gnb").fadeIn(300);
 	});
 
+	$("#gnb a").click(function(e){
+		if($(this).hasClass("on")){
+			$(this).removeClass("on");
+		}else{
+			$(this).addClass("on");
+			$(this).parent().siblings().children().removeClass("on");
+		}
+	});
+
 	$("#gnb .btnClose").click(function(){
 		$("body").css("overflow", "auto");
 		$("#gnb").fadeOut(300);
