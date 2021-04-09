@@ -15,7 +15,7 @@
 	<section id="wrap">
 		<header id="header">
 			<button class="btnPrev type--black">이전</button>
-      <div class="title">기업 회원 가입</div>
+      <div class="title">My Page</div>
 			<a href="#" id="btnGnb" class="btnMenu">메뉴</a>
 		</header>
 		<div id="container" class="with--fixButton">
@@ -71,7 +71,7 @@
       </div>
 		</div>
 		<div id="fixButton">
-			<a href="#">정보 수정하기</a>
+			<a href="#" class="openPopup" data-pop="popupPassword">정보 수정하기</a>
 		</div>
 	</section>
 
@@ -109,5 +109,18 @@
 		</div>
 		<button type="button" class="btnClose">닫기</button>
 	</div>
+
+  <div id="popupPassword" class="popAlert">
+    
+    <div class="title">비밀번호를 입력해 주세요.</div>
+    <div class="inputBasic mt20">
+      <input type="text" placeholder="비밀번호" />
+    </div>
+    <div class="btn">
+      <button type="button" class="btnBasic">확인</button>
+    </div>
+    
+  </div>
+  <div id="dim"></div>
 </body>
 </html>
