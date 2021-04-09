@@ -172,6 +172,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .color-fff { color:#fff !important; }
 
+.mt20 { margin-top:20px !important; }
+
 .inner { padding:0 20px; }
 
 #header { width:100%; height:60px; position:absolute; left:0; top:0; z-index:20; overflow:hidden; }
@@ -205,9 +207,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #gnb { width:100%; height:100%; display:none; padding:100px 0; position:fixed; left:0; top:0; background:#fff; z-index:99; }
 #gnb .title { margin-bottom:50px; text-align:center; font-size:20px; color:#3c3c3c; }
 #gnb .title span { color:#6552f6; font-weight:700; }
-#gnb ul li { padding:0 35px; }
-#gnb ul li a { padding-left:24px; display:block; background:url('../images/common/iconGnb.png') left center no-repeat; background-size:10px auto; font-size:20px; }
-#gnb ul li+li { margin-top:35px; }
+#gnb > ul > li { padding:0 35px; }
+#gnb > ul > li > a { padding-left:24px; display:block; background:url('../images/common/iconGnb.png') left center no-repeat; background-size:10px auto; font-size:20px; }
+#gnb > ul > li+li { margin-top:35px; }
+#gnb ul.depth2 { max-height:0; margin-top:14px; padding-left:25px; overflow:hidden; transition:max-height .5s linear; }
+#gnb a.on+ul.depth2 { max-height:500px; }
+#gnb ul.depth2 li+li { margin-top:12px; }
+#gnb ul.depth2 li a { color:#afafaf; font-size:18px; }
 #gnb .btn { margin-top:84px; text-align:center; }
 #gnb .btn a { width:122px; height:50px; display:inline-block; border:1px solid #5945f0; border-radius:50px; color:#5945f0; font-size:16px; font-weight:700; line-height:48px; vertical-align:middle; }
 #gnb .btn a.logout { border-color:#afafaf; color:#afafaf; }
@@ -231,13 +237,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .textBasic { margin-bottom:16px; font-size:20px; line-height:28px; }
 
-.inputBasic input[type="text"], .inputBasic input[type="password"], .inputBasic input[type="number"] { width:100%; height:54px; padding:0 10px; background:#fff; border:1px solid #707070; border-radius:5px; font-size:15px; }
+.inputBasic { position:relative; }
+.inputBasic input[type="text"], .inputBasic input[type="password"], .inputBasic input[type="number"] { width:100%; height:54px; padding:0 10px; position:relative; background:#fff; border:1px solid #707070; border-radius:5px; font-size:15px; z-index:1; }
 .inputBasic input[type="text"]::placeholder,
 .inputBasic input[type="password"]::placeholder,
 .inputBasic input[type="number"]::placeholder { color:rgba(34,34,34,.4); }
 .inputBasic input[type="text"]:disabled,
 .inputBasic input[type="password"]:disabled,
 .inputBasic input[type="number"]:disabled { background:#f4f4f4; border-color:#e6e6e6; color:#3c3c3c; }
+.inputBasic.type--email a { position:absolute; right:15px; top:50%; font-size:14px; text-decoration:underline; color:#6552f6; transform:translateY(-50%); z-index:2; }
 
 .selectBasic { position:relative; }
 .selectBasic:after { content:''; width:13px; height:8px; position:absolute; right:13px; top:50%; margin-top:-4px; background:url('../images/common/iconSelect.png') no-repeat; background-size:100% auto; z-index:1; }
@@ -246,6 +254,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .boxGuide { font-size:14px; color:#afafaf; line-height:24px; }
 .boxGuide.txt-small { font-size:12px; color:#3c3c3c; }
+.boxGuide.danger { color:#f85a6e; }
 
 h3.title { font-size:18px; font-weight:400; color:#222; }
 
