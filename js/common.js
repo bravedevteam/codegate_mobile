@@ -53,6 +53,19 @@ $(function(){
 		}
 	});
 
+	$(".boxFAQ li .cont").slideUp(0);
+	$(".boxFAQ li .title").click(function(){
+		if($(this).hasClass("on")){
+			$(this).removeClass("on");
+			$(this).siblings(".cont").slideUp(300);
+		}else{
+			$(this).addClass("on");
+			$(this).siblings(".cont").slideDown(300);
+			$(this).parent().siblings().children(".title").removeClass("on");
+			$(this).parent().siblings().children(".cont").slideUp(300);
+		}
+	});
+
 
 	$(".openPopup").click(function(e){
 		e.preventDefault();
