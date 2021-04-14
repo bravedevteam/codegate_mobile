@@ -179,4 +179,4 @@
 .boxInfomation .useGuide li:first-child { padding-top:0; }
 .boxInfomation .useGuide .guide { padding:0 35px; position:relative; font-size:14px; line-height:26px; }
 .boxInfomation .useGuide .guide:before { content:''; width:3px; height:3px; position:absolute; left:26px; top:12px; background:#6552f6; border-radius:50%; }
-.boxInfomation .logo { width:100px; position:absolute; left:50%; bottom:45px; margin-left:-50px; }
+.boxInfomation .logo { width:119px; position:absolute; left:50%; bottom:45px; margin-left:-55px; }
