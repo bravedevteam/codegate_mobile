@@ -144,13 +144,15 @@
 .boxCustomer { padding:100px 0 0; }
 .boxCustomer h3.title { margin-bottom:10px; padding:0 20px; font-size:20px; font-weight:500; }
 
+.boxFAQ li { border-bottom:1px solid #eff1f2; }
 .boxFAQ li+li { margin-top:24px; }
 .boxFAQ li .title { padding:14px 40px 14px 20px; position:relative; font-size:18px; font-weight:500; font-family:"SFProDisplay", "Sans-serif"; }
 .boxFAQ li .title:after { content:''; width:13px; height:8px; position:absolute; right:20px; top:50%; background:url('../images/common/iconSelect.png') no-repeat; background-size:100% auto; transform:translateY(-50%); transition:all .3s; }
 .boxFAQ li .title.on:after { transform:rotate(180deg); }
-.boxFAQ li .cont { padding:18px 20px; border-bottom:1px solid #eff1f2; font-size:14px; line-height:26px; color:#999; }
+.boxFAQ li .cont { padding:18px 20px; font-size:14px; line-height:26px; color:#999; }
 
 .boxPrivacy { padding:20px; color:#3c3c3c; line-height:26px; font-size:14px; }
+.boxPrivacy h4.title { margin-bottom:30px; text-align:center; font-size:18px; }
 .boxPrivacy .title { font-weight:700; }
 .boxPrivacy .cont { margin-bottom:30px; }
 .boxPrivacy .cont:last-child { margin-bottom:0; }
