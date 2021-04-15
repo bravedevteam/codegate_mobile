@@ -217,6 +217,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #gnb a.on+ul.depth2 { max-height:500px; }
 #gnb ul.depth2 li+li { margin-top:12px; }
 #gnb ul.depth2 li a { color:#afafaf; font-size:18px; }
+#gnb ul.depth3 { margin-top:12px; }
+#gnb ul.depth3 li a { padding-left:14px; position:relative; font-size:16px; }
+#gnb ul.depth3 li a:before { content:'-'; position:absolute; left:0; top:0; }
 #gnb .btn { margin-top:84px; text-align:center; }
 #gnb .btn a { width:122px; height:50px; display:inline-block; border:1px solid #5945f0; border-radius:50px; color:#5945f0; font-size:16px; font-weight:700; line-height:48px; vertical-align:middle; }
 #gnb .btn a.logout { border-color:#afafaf; color:#afafaf; }
