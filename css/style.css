@@ -12,6 +12,13 @@
 .boxLogin .link a { padding:0 6px; position:relative; display:inline-block; color:#afafaf; font-size:14px; }
 .boxLogin .link a+a:after { content:''; width:1px; height:14px; position:absolute; left:0; top:50%; margin-top:-7px; background:#afafaf; }
 
+.boxLogin.type--find { padding-top:130px; text-align:left; }
+.boxLogin.type--find .title { margin-bottom:20px; font-size:20px; font-weight:500; }
+.boxLogin.type--find .subject { margin-bottom:25px; font-size:18px; }
+.boxLogin.type--find .input { margin-bottom:10px; }
+.boxLogin.type--find .input+.input { margin-top:25px; }
+.boxLogin.type--find .input h3.title { margin-bottom:15px; font-size:18px; font-weight:400; }
+
 .boxNoLogin { padding:28px 0 70px; }
 .boxNoLogin .item { margin-bottom:33px; }
 .boxNoLogin .item .swiper-container { padding:0 8px; }
@@ -182,3 +189,11 @@
 .boxInfomation .useGuide .guide { padding:0 35px; position:relative; font-size:14px; line-height:26px; }
 .boxInfomation .useGuide .guide:before { content:''; width:3px; height:3px; position:absolute; left:26px; top:12px; background:#6552f6; border-radius:50%; }
 .boxInfomation .logo { width:119px; position:absolute; left:50%; bottom:45px; margin-left:-55px; }
+
+.guide-text { font-size:12px; color:#3c3c3c; text-align:left; }
+.guide-text.type--dot { padding-left:6px; position:relative; }
+.guide-text.type--dot:before { content:'·'; position:absolute; left:0; top:0; }
+.guide-text.type--imp { padding-left:14px; position:relative; }
+.guide-text.type--imp:before { content:'※'; position:absolute; left:0; top:0; }
+.guide-text.danger { color:#f85a6e; }
+.guide-text+.guide-text { margin-top:3px; }
