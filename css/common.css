@@ -177,7 +177,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .inner { padding:0 20px; }
 
 #header { width:100%; height:60px; position:absolute; left:0; top:0; z-index:20; overflow:hidden; }
-#header h1 { height:24px; float:left; font-size:15px; font-weight:700; line-height:24px; }
+#header h1 { width:52px; height:39px; float:left; background:url('../images/common/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #header .title { margin-top:26px; font-size:20px; font-weight:400; text-align:center; }
 #header .btnMenu { width:26px; height:24px; position:absolute; right:20px; top:24px; background:url('../images/common/btnMenu.png') center center no-repeat; background-size:26px auto; font-size:0; text-indent:-99999px; }
 #header .btnMenu.white { background-image:url('../images/common/btnMenuWhite.png'); }
@@ -186,13 +186,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #header .btnClose { width:38px; height:38px; position:absolute; left:10px; top:20px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
 #header .btnClose.type--black { background-image:url('../images/common/btnCloseBlack.png'); }
 
+#container { height:100%; }
 #container.with--fixButton { padding-bottom:60px; }
 
 #fixButton { width:100%; position:fixed; left:0; bottom:0; z-index:20; }
 #fixButton a { height:60px; display:block; background:#5945f0; color:#fff; font-size:20px; font-weight:700; text-align:center; line-height:60px; }
 #fixButton a.add:before { content:''; width:18px; height:18px; margin:-4px 7px 0 0; display:inline-block; background:url('../images/common/iconPlus.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
 
-#footer { padding:36px 0 30px; background:#eff1f2; text-align:center; }
+#footer { width:100%; position:absolute; left:0; bottom:0; padding:36px 0 30px; background:#eff1f2; text-align:center; }
 #footer h2 { margin-bottom:30px; font-size:13px; }
 #footer .link { width:210px; display:inline-block; margin-bottom:18px; }
 #footer .link a { padding:6px 8px; position:relative; display:inline-block; font-size:10px; color:#8e8e8e; }
@@ -201,8 +202,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #footer .link a:nth-child(4):after { display:none; }
 #footer .address { font-size:10px; color:#8e8e8e; font-family:"SFProDisplay", 'Sans-serif'; }
 
-#wrap { min-height:100%; }
+#wrap { min-height:100%; position:relative; }
+#wrap.main { padding-bottom:80px; }
 #wrap.main #header { height:auto; padding:24px 20px; position:relative; }
+#wrap.type--full { height:100%; }
 #wrap > #gnb { display:block; }
 
 #wrap > .btnClose { width:32px; height:32px; position:absolute; left:14px; top:26px; background:url('../images/common/btnPopClose.png') center center no-repeat; background-size:17px auto; font-size:0; text-indent:-99999px; z-index:99; }

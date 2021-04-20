@@ -46,7 +46,7 @@
 .boxDetailTop.type--write .cont .txt { margin-bottom:20px; font-size:20px; line-height:28px; color:#3c3c3c; }
 .boxDetailTop.type--write .cont .boxFile { width:100%; height:68vw; padding-bottom:64px; display:flex; position:relative; background:#f5f5f5; border-radius:15px; align-items:center; justify-content:center; overflow:hidden; }
 .boxDetailTop.type--write .cont .boxFile:after { content:''; width:100%; height:100%; position:absolute; left:0; top:0; border-radius:15px; z-index:1;
-	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%236552F6FF' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23AFAFAFFF' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .boxDetailTop.type--write .cont .boxFile .fileSub { padding-top:22px; background:url('../images/common/iconPlusGray.png') center top no-repeat; background-size:18px auto; color:#afafaf; font-size:14px; }
 .boxDetailTop.type--write .cont .boxFile .fileBox { width:100%; position:relative; background:#f5f5f5; z-index:2; }
@@ -69,9 +69,16 @@
 
 .boxMainStory { padding:18px 0 70px; }
 .boxDetailStory { padding:44px 0 20px; margin-top:-30px; background:#fff; border-top-left-radius:30px; border-top-right-radius:30px; }
+
+.boxMainStory.type--noitem { padding:18px 20px 70px; }
+.boxMainStory.type--noitem .title { margin-bottom:38px; font-size:20px; color:#3c3c3c; }
+.boxMainStory.type--noitem .noBox { width:100%; height:43vh; position:relative; display:flex; align-items:center; justify-content:center; background:#f5f5f5; border-radius:15px; }
+.boxMainStory.type--noitem .noBox:after { content:''; width:100%; height:100%; position:absolute; left:0; top:0; border-radius:15px; background:url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='rgb(175, 175, 175)' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); z-index:1; }
+.boxMainStory.type--noitem .noBox span { padding-top:23px; background:url('../images/common/iconPlusGray.png') center top no-repeat; background-size:18px auto; color:#afafaf; font-size:14px; }
+
 .boxTopArea { position:relative; margin-bottom:18px; }
 .boxTopArea h3.title { font-size:22px; font-weight:700; }
-.boxTopArea .btnOpt { width:8px; height:20px; position:absolute; right:0; top:50%; margin-top:-10px; background:url('../images/common/iconOpt.png') center center no-repeat; background-size:2px auto; font-size:0; text-indent:-99999px; }
+.boxTopArea .btnOpt { width:8px; height:20px; position:absolute; right:0; top:50%; margin-top:-10px; background:url('../images/common/iconOpt.png') center center no-repeat; background-size:4px auto; font-size:0; text-indent:-99999px; }
 
 .boxStoryItem li { border-radius:10px; background:#fff; border:1px solid #eff1f2; box-shadow: 2px 3px 15px 0 rgba(0, 0, 0, 0.06); overflow:hidden; }
 .boxStoryItem li+li { margin-top:20px; }
@@ -86,6 +93,11 @@
 .boxStoryItem .cont .bottom .btn a.write { background-image:url('../images/common/iconWrite.png'); }
 .boxStoryItem .cont .bottom .btn a.delete { background-image:url('../images/common/iconDelete.png'); }
 .boxStoryItem .cont .bottom .btn a+a { margin-left:10px; }
+
+.boxStoryItem.type--noitem li { border:0; background:transparent; box-shadow:none;; }
+.boxStoryItem.type--noitem .noBox { width:100%; height:166px; position:relative; display:flex; align-items:center; justify-content:center; background:#f5f5f5; border-radius:15px; }
+.boxStoryItem.type--noitem .noBox:after { content:''; width:100%; height:100%; position:absolute; left:0; top:0; border-radius:15px; background:url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='rgb(175, 175, 175)' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); z-index:1; }
+.boxStoryItem.type--noitem .noBox span { padding-top:23px; background:url('../images/common/iconPlusGray.png') center top no-repeat; background-size:18px auto; color:#afafaf; font-size:14px; }
 
 .boxDetailWrite { padding-bottom:50px; border-top:1px solid #eff1f2; }
 .boxDetailWrite .title { border-bottom:1px solid #eff1f2; }
@@ -113,7 +125,7 @@
 .boxAgree .check+.check { margin-top:16px; }
 .boxAgree .check .detail { position:absolute; right:0; top:0; font-size:12px; color:#afafaf; }
 
-.listMyitem { padding:100px 20px 50px;
+.listMyitem { height:100%; padding:100px 20px 50px;
 	background: rgb(112,94,252);
 	background: linear-gradient(180deg, rgba(112,94,252,1) 0%, rgba(88,68,240,1) 100%);
 }
@@ -125,6 +137,11 @@
 .listMyitem ul li .cont dl { overflow:hidden; font-size:14px; color:#3c3c3c; letter-spacing:-.08em; }
 .listMyitem ul li .cont dl dt { float:left; }
 .listMyitem ul li .cont dl dd { margin-left:65px; font-weight:700; }
+
+.listMyitem .title { margin-bottom:38px; font-size:20px; color:#fff; }
+.listMyitem .noBox { width:100%; height:43vh; position:relative; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.15); border-radius:15px; }
+.listMyitem .noBox:after { content:''; width:100%; height:100%; position:absolute; left:0; top:0; border-radius:15px; background:url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='rgb(121, 105, 245)' stroke-width='1' stroke-dasharray='5%2c 5' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); z-index:1; }
+.listMyitem .noBox span { padding-top:32px; background:url('../images/content/iconMyitem.png') center top no-repeat; background-size:30px auto; color:#fff; font-size:14px; }
 
 .boxSetup { padding:27px 0; position:relative; }
 .boxSetup .topBox { height:40px; margin:0 20px; padding:0 20px; background:#effcfb; border-radius:50px; font-size:14px; line-height:40px; }
