@@ -185,6 +185,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #header .btnPrev.type--black { background-image:url('../images/common/btnPrevBlack.png'); }
 #header .btnClose { width:38px; height:38px; position:absolute; left:10px; top:20px; background:url('../images/common/btnClose.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
 #header .btnClose.type--black { background-image:url('../images/common/btnCloseBlack.png'); }
+#header .btnClose.type--scan { background-image:url('../images/common/btnTopScan.png'); background-size:25px auto; }
 
 #container { height:100%; }
 #container.with--fixButton { padding-bottom:60px; }
